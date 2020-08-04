@@ -36,9 +36,9 @@ def get_data(url):
 def write_csv(mid,name,mtime):
     res = pd.DataFrame()
 
-    res['mid'] = mid # 用戶編號
+    res['mid'] = mid # userid
     res['name'] = name # 名字
-    res['mtime'] = mtime # 關注時間
+    res['mtime'] = mtime #关注时间
 
     res.to_csv('FollowerData.csv', index = None)
 
