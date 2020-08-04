@@ -46,7 +46,7 @@ def write_csv(mid,name,mtime):
 if __name__ == '__main__':
     AllFansNum = 27221
     # 此处第一个加一为抵消向下取证带来的数值变化 ， 第二个加一为循环时并不会循环到本位
-    AllPageNum = 27221//20 + 1 + 1
+    AllPageNum = AllFansNum//20 + 1 + 1
     vmid = int(input('输入你要爬去的userid：'))
     mid = []
     name = []
